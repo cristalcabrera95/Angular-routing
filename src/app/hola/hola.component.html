@@ -1,0 +1,9 @@
+<p>Agrega un nombre</p>
+<input type="text" [(ngModel)] = "newCat" (keydown.enter)= "addGatos()">
+<button class= 'boton' (click)= "addGatos()">Agregar</button>
+
+<ul>
+  <li *ngFor="let gato of gatos">
+    {{gato}}
+  </li>
+</ul>
